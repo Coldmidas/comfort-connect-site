@@ -1,0 +1,302 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 111px;
+  margin-bottom: 67px;
+  padding: 0 10px;
+}
+
+.header {
+  &__number-tablet {
+    display: none;
+  }
+  // .header__logo
+  height: 900px;
+
+  padding: 43px 0 83px 0;
+  background: url('../../img/onlifon.png') center/cover no-repeat;
+  &__logo {
+  }
+
+  // .header__contacts
+
+  &__contacts {
+    display: flex;
+    gap: 25px;
+    // .header__contacts_logo
+
+    &_logo {
+    }
+
+    // .header__contacts_data
+
+    &_data {
+    }
+
+    // .header__contacts_tel
+
+    &_tel {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 25px;
+      color: #000b34;
+      text-decoration: none;
+    }
+
+    // .header__contacts_adress
+
+    &_adress {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      color: #000b34;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.25em;
+    margin-bottom: 5px;
+    color: #ff6b00;
+  }
+
+  // .header__title
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 102px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #f2f5ff -134.12%, #000b34 112.35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 25px;
+  }
+  &__benefits {
+    // .header__benefits_item
+    display: flex;
+    margin: 0 auto;
+    max-width: 570px;
+    gap: 25px;
+    justify-content: center;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    :last-child {
+      margin-top: -5px;
+      z-index: 2;
+    }
+    &_item {
+      display: flex;
+      gap: 10px;
+      text-align: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    // .header__benefits_item-text
+
+    &_item-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 23px;
+      text-align: center;
+      color: #7e929b;
+    }
+  }
+
+  // .header__benefits-svg
+
+  &__benefits-svg {
+  }
+
+  // .header__button
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -170px;
+  }
+
+  &__background {
+    margin-top: -125px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// .last-item {
+//   margin-top: -5px;
+// }
+
+.button {
+  background: linear-gradient(
+    267.27deg,
+    #00c7ff -46.97%,
+    #80e3ff 6.89%,
+    #00c7ff 47.04%,
+    #80e3ff 94.05%,
+    #00c7ff 141.05%
+  );
+  box-shadow: 0px 5px 0px #028ab0;
+  border-radius: 11px;
+  padding: 30px 84px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 1325px) {
+  .button {
+    padding: 25px 54px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .header {
+    &__subtitle {
+      font-size: 24px;
+    }
+
+    &__title {
+      font-size: 70px;
+    }
+    &__benefits {
+      gap: 18px;
+    }
+
+    &__background {
+      margin-top: -70px;
+    }
+  }
+
+  .button {
+    padding: 25px 54px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    &__background {
+      margin-top: -40px;
+    }
+  }
+
+  .button {
+    padding: 25px 54px;
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 15px 40px;
+    margin-top: 70px;
+    font-size: 18px;
+  }
+  .header {
+    &__background {
+      margin-top: -10px;
+    }
+  }
+}
+
+@media (max-width: 665px) {
+  nav {
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .header {
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+    &__benefits {
+      gap: 20px;
+      max-width: 400px;
+    }
+    &__contacts {
+      &_logo {
+      }
+
+      // .header__contacts_data
+
+      &_data {
+        display: none;
+      }
+    }
+
+    &__number-tablet {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &__logo {
+      img {
+        width: 100%;
+      }
+    }
+    &__background {
+      margin-top: -60px;
+    }
+    &__benefits {
+      //   gap: 10px;
+      max-width: 300px;
+      &_item-text {
+        font-size: 16px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 45px;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    &__background {
+      width: 101%;
+    }
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 100px;
+  }
+}
